@@ -26,7 +26,7 @@ public class QuestaoTresService {
             throw new IllegalArgumentException("A quantidade de linhas * colunas deve" +
                     " ser menor ou igual ao tamanho do texto");
         }
-        return textoCriptografado.toString();
+        return textoCriptografado.toString().trim();
     }
 
     private void validarTexto(String texto) {
